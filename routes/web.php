@@ -15,3 +15,5 @@ use App\Http\Controllers\TrainController;
 */
 
 Route::get('/', 'TrainController@index');
+
+Route::get('/new', 'TrainController@newTrain');

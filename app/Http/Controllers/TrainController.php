@@ -16,4 +16,23 @@ class TrainController extends Controller
         return view('home', $data);
         
     }
+    public function newTrain()
+    {
+        $train = new Train();
+        $train->fill([
+            'company' => 'Italo',
+            'departure_station' => 'Anzio',
+            'departure_date' => '2022-02-18',
+            'departure_hours' => '15:00:00',
+            'arrival_station' => 'Roma Termini',
+            'arrival_date' => '2022-02-18',
+            'arrival_hours' => '16:10:00',
+            'code' => 'TR 1234',
+            'carriages' => '7',
+            'in_time' => 1,
+            'deleted' => 0,
+        ]);
+        $result = $train->save();
+        dd($result, $train);
+    }
 }

@@ -27,7 +27,8 @@ class UpdateTrainsTable extends Migration
     public function down()
     {
         Schema::table('trains', function (Blueprint $table) {
-            //
+            $table->dropColumn('arrival_date');
+            $table->dropColumn('departure_date');
         });
     }
 }
