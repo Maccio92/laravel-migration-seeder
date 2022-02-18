@@ -14,14 +14,14 @@
             <h4>Codice Treno: {{$train -> code}}</h4>
             <h4>N° Carrozze: {{$train -> carriages}}</h4>
             @if ($train->in_time == false)
-                <h4>Ritardo: Treno in ritardo</h4>
+                <h4 class="green-text"> In Ritardo </h4>
                 @else
-                <h4>Ritardo: Treno in orario</h4>
+                <h4 class="cross"> In Ritardo </h4>
                 @endif
             @if ($train->deleted == true)
-                <div class="red"></div>
-                @else
-                <div class="green"></div>
+            <h4 class="green-text"> Cancellato </h4>
+            @else
+            <h4 class="cross"> Cancellato </h4>
             @endif
         </div>
     @endforeach

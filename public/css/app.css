@@ -12,3 +12,21 @@
   border-radius: 50px;
 }
 
+.card {
+  width: 30%;
+  background-color: black;
+  color: white;
+  border: 5px soldi red;
+  border-radius: 10px;
+  padding: 2em;
+}
+
+.cross {
+  text-decoration: line-through;
+  color: red;
+}
+
+.green-text {
+  color: green;
+}
+
