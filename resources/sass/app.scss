@@ -1,13 +1,9 @@
+@import "~bootstrap/scss/bootstrap";
+
 .red{
     width: 10px;
     height: 10px;
     background-color: red;
-    border-radius: 50px;
-}
-.green{
-    width: 10px;
-    height: 10px;
-    background-color: green;
     border-radius: 50px;
 }
 .card
@@ -15,7 +11,7 @@
     width: 30%;
     background-color: black;
     color: white;
-    border: 5px soldi red;
+    border: 5px solid red;
     border-radius: 10px;
     padding: 2em;
 }
@@ -23,6 +19,6 @@
     text-decoration: line-through;
     color: red;
 }
-.green-text{
-    color: green;
+.red-text{
+    color: red;
 }

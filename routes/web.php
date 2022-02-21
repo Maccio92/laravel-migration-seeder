@@ -15,5 +15,4 @@ use App\Http\Controllers\TrainController;
 */
 
 Route::get('/', 'TrainController@index');
-
-Route::get('/new', 'TrainController@newTrain');
+Route::get('/{train}', 'TrainController@show')->name('show');
