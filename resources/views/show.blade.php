@@ -20,5 +20,7 @@
             <p>{{$train -> code}}</p>
             <h4>N° Carrozze:</h4>
             <p>{{$train -> carriages}}</p>
+            <a href="{{ route('home') }}" class="btn btn-primary">View Train</a>
 </div>
+
 @endsection
